@@ -41,4 +41,14 @@ For this you will need docker installed.
 
 * `docker run -p 8501:8501 pvvsdoc001/fetch-ml-app:v1`
 
+** ***The Application will be accessible on http://localhost:8501/*** **
 
+### How to use the application:
+* Displayed images are results before and after prediction with the saved model
+* Upload the file 'daily_data.csv' in the side bar, to test with new data
+* Can download the final image with the button
+
+### Future Scope:
+* As this is a POC project which is at a rudimentary phase, exception handling and unit testing are not taken care of.
+* More visualizations for the data can be added, like month wise count distributions, weekly predictions
+* The model and streamlit app can be added and deployed as seperate microservices.
