@@ -1,0 +1,9 @@
+dataset:
+  path: ../data/data_daily.csv
+  split_ratio: 0.8
+model:
+  initial_lr: 0.01
+  epochs: 100
+  batch_size: 10
+  model_output_path: output/model_output.pth
+  mode_forecast_image_path: output/forecast.png
