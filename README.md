@@ -49,6 +49,6 @@ For this you will need docker installed.
 * Can download the final image with the button
 
 ### Future Scope:
-* As this is a POC project which is at a rudimentary phase, exception handling and unit testing are not taken care of.
+* As this is a POC project which is at a rudimentary phase, exception handling and unit testing are not taken care of. Can be added later
 * More visualizations for the data can be added, like month wise count distributions, weekly predictions
 * The model and streamlit app can be added and deployed as seperate microservices.
