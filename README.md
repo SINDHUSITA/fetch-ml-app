@@ -44,6 +44,7 @@ For this you will need docker installed.
 ** ***The Application will be accessible on http://localhost:8501/*** **
 
 ### How to use the application:
+![Display Image](https://github.com/SINDHUSITA/fetch-ml-app/blob/main/demo.jpg)
 * Displayed images are results before and after prediction with the saved model
 * Upload the file 'daily_data.csv' in the side bar, to test with new data
 * Can download the final image with the button
