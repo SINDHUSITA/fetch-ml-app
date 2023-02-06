@@ -30,8 +30,15 @@ To run the streamlit application, run the following commands in the cloned direc
 * `pip install -r requirements.txt`
 * `streamlit run streamlit_main.py`
 
-### Run the application on Docker
+### Run the application with Dockerfile locally:
+For this you will need docker installed.
+* for docker build : `docker build -t username/imagename:v1 .`
+* for docker run : `docker run -p 8501:8501 imagename:v1`
 
-* Use the Dockerfile, `docker run -p 8501:8501`
+### Run with published docker-image 
+
+* `docker pull pvvsdoc001/fetch-ml-app:v1`
+
+* `docker run -p 8501:8501 pvvsdoc001/fetch-ml-app:v1`
 
 
