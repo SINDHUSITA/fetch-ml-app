@@ -24,7 +24,7 @@ def convert_image(img):
     return byte_im
 
 
-def temp_image(upload):
+def get_model_result(upload):
     ModelInference(input_data_path=upload,).model_result()
     image = Image.open("data/input_data.png")
     col1.write("Data Before Forecast:")
@@ -35,13 +35,13 @@ def temp_image(upload):
     result_image = Image.open("results/output_result.png")
     col2.image(result_image)
     st.sidebar.markdown("\n")
-    st.sidebar.download_button("Download forecast image", convert_image(image), "forecast.png", "image/png")
+    st.sidebar.download_button("Download forecast image", convert_image(image), "model_result.png", "image/png")
 
 
 col1, col2 = st.columns(2)
 my_upload = st.sidebar.file_uploader("Upload an input excel file", type=["csv"])
 
 if my_upload is not None:
-    temp_image(upload=my_upload)
+    get_model_result(upload=my_upload)
 else:
-    temp_image(upload="data_daily.csv")
+    get_model_result(upload="data_daily.csv")

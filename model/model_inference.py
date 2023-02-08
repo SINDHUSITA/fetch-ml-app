@@ -51,5 +51,4 @@ class ModelInference():
 
 
 if __name__ == "__main__":
-    CONFIG_PATH = "Config.yml"
     ModelInference(input_data_path="../data/data_daily.csv").model_result()
