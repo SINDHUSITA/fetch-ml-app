@@ -30,8 +30,26 @@ To run the streamlit application, run the following commands in the cloned direc
 * `pip install -r requirements.txt`
 * `streamlit run streamlit_main.py`
 
-### Run the application on Docker
+### Run the application with Dockerfile locally:
+For this you will need docker installed.
+* for docker build : `docker build -t username/imagename:v1 .`
+* for docker run : `docker run -p 8501:8501 imagename:v1`
 
-* Use the Dockerfile, `docker run -p 8501:8501`
+### Run with published docker-image 
 
+* `docker pull pvvsdoc001/fetch-ml-app:v1`
 
+* `docker run -p 8501:8501 pvvsdoc001/fetch-ml-app:v1`
+
+** ***The Application will be accessible on http://localhost:8501/*** **
+
+### How to use the application:
+![Display Image](https://github.com/SINDHUSITA/fetch-ml-app/blob/main/demo.jpg)
+* Displayed images are results before and after prediction with the saved model
+* Upload the file 'daily_data.csv' in the side bar, to test with new data
+* Can download the final image with the button
+
+### Future Scope:
+* As this is a POC project which is at a rudimentary phase, exception handling and unit testing are not taken care of. Can be added later
+* More visualizations for the data can be added, like month wise count distributions, weekly predictions
+* The model and streamlit app can be added and deployed as seperate microservices.
